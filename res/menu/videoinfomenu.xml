@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/videomenu_like" android:title="@string/like"></item>
+<item android:id="@+id/videomenu_share" android:title="Share" android:icon="@android:drawable/ic_menu_share"></item>
+<item android:id="@+id/videomenu_comment" android:title="Comment"></item>
+
+<item android:id="@+id/videomenu_download" android:title="@string/download"><menu><item android:title="Download SD Version" android:id="@+id/videomenu_download_sd"></item>
+<item android:title="Download HD version" android:id="@+id/videomenu_download_hd" android:visible="false"></item>
+</menu>
+</item>
+
+<item android:visible="false" android:id="@+id/videomenu_edit" android:title="Edit"></item>
+</menu>

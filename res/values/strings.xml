@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="sort_mostliked">Most Liked</string>
+    <string name="sort_mostcommented">Most Commented</string>
+    <string name="sort_mostplayed">Most Played</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_newest">Newest</string>
+    <string name="app_name">Vimeo Droid</string>
+    <string name="oauth_consumer_key">2f7f100837808de44b1ecf9c3ef6514b</string>
+    <string name="ButtonAuthorizeText">Authorize</string>
+    <string name="app_label">Vimeo Droid</string>
+    <string name="search_hint">Search Vimeo videos</string>
+    <string name="sort_relevant">Relevant</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="video_liked">Video Liked</string>
+    <string name="video_unliked">Video Unliked</string>
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
+    <string name="download">Download</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="BASE64_PUBLIC_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApfAOlqQj0PwwmNkiPk9FC1dDhzDgcJZKnXGT9tDu3lj4qvmfrkHBO4dAqIptLeBFAj8kvZpYzxS+q2wgfb01idmStlq0Wxzj+JpE7/z9MKDPBIAlVZUS8leWpEVHViipZSRvJkWOyJT1iotpyoa4GqTQwWzpGTJEznzjAOqTMDu12fvcbC959cgkaMcL7NFvA7WOaq4zZYTjYU5+JHVIEtp4hsdoKyipZYp6wl2PgP5lU+lMum0G4KCH27Oftp5ZAX4KEod0ByZ/iIaPE5fSaPeQQ7jNcvNAARQI1GPTO4befqrwy5G8TmAZNNiAI+dAPqnPckRn/KeFRRwIECoy0wIDAQAB</string>
+    <string name="SETTING_HTTP_CLIENT_PREF">SETTING_HTTP_CLIENT_PREF</string>
+    <string name="SETTING_USE_BUILTIN_PLAYER">SETTING_USE_BUILTIN_PLAYER</string>
+    <string name="SETTING_VIDEO_QUALITY">SETTING_VIDEO_QUALITY</string>
+    <string name="btn_allsubscriptions">All Subscriptions</string>
+    <string name="btn_myvideos">My Videos</string>
+</resources>

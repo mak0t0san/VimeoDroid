@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/menuGroup_main">
+		<item android:id="@+id/menu_refresh" android:title="Refresh"
+			android:icon="@drawable/ic_menu_refresh" android:orderInCategory="1"></item>
+		<item android:id="@+id/menu_search" android:title="Search"
+			android:icon="@android:drawable/ic_menu_search"
+			android:orderInCategory="2"></item>
+		<item android:id="@+id/menu_sort" android:orderInCategory="3"
+			android:title="Sort" android:icon="@android:drawable/ic_menu_sort_by_size">
+			<menu>
+				<item android:id="@+id/menu_sortrelevant" android:title="@string/sort_relevant" android:visible="false"></item><item android:title="@string/sort_newest" android:id="@+id/menu_sort_newest"></item>
+				<item android:id="@+id/menu_sort_oldest" android:title="@string/sort_oldest"></item>
+				<item android:id="@+id/menu_sort_mostplayed" android:title="@string/sort_mostplayed"></item>
+				<item android:id="@+id/menu_sort_mostcommented" android:title="@string/sort_mostcommented"></item>
+				<item android:id="@+id/menu_sort_mostliked" android:title="@string/sort_mostliked"></item>
+			
+</menu>
+		</item>
+		<item android:title="Upload" android:id="@+id/menu_upload"
+			android:icon="@android:drawable/ic_menu_upload"
+			android:orderInCategory="3"></item>
+		<item android:title="Record" android:id="@+id/menu_Record"
+			android:icon="@android:drawable/ic_menu_camera"
+			android:orderInCategory="4"></item>
+		
+	<item android:title="More..." android:id="@+id/menu_more" android:orderInCategory="5"><menu>
+<item android:id="@+id/menu_Settings" android:title="Settings"></item><item android:id="@+id/menu_Logout" android:title="Log out"></item>
+</menu>
+
+</item>
+</group>
+
+</menu>

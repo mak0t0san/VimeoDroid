@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:id="@+id/button_layout">
+	<TextView android:text="17" android:textSize="20sp"
+		android:layout_gravity="center|top" android:id="@+id/button_value" />
+	<TextView android:text="Videos" android:textSize="15sp"
+		android:layout_gravity="center|bottom" android:id="@+id/button_desc" />
+</FrameLayout>

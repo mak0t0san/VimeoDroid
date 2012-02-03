@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+	<TextView android:text="Title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/videoinfoedit_titletext" />
+	<EditText android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/videoinfoedit_title" />
+	<TextView android:text="Description" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/videoinfoedit_descriptiontext"  />
+	<EditText android:inputType="textCapSentences|textMultiLine|textLongMessage"
+		android:id="@+id/videoinfoedit_description" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:lines="8" />
+	<Button android:text="Save changes" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/videoinfoedit_savebutton" />
+</LinearLayout>

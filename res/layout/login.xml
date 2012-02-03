@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/LinearLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#86C9EF"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<ImageView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:id="@+id/VimeoLogo" android:src="@drawable/logo_vimeo_land"
+		android:layout_width="192px" android:layout_height="55px"></ImageView>
+	<Button android:layout_height="wrap_content" android:text="@string/ButtonAuthorizeText" android:id="@+id/ButtonAuthorize" android:layout_width="wrap_content" android:layout_below="@+id/TextView01" android:layout_centerHorizontal="true" android:layout_marginTop="92dp"></Button>
+	<TextView android:layout_height="wrap_content" android:textColor="#000000" android:layout_width="fill_parent" android:id="@+id/TextView01" android:text="First, we need you to authorize this app. Click on the button below to authorize. This will open up your browser, where you will login into Vimeo.com. Once you are done, you will be returned to this app." android:layout_below="@+id/VimeoLogo" android:layout_alignParentLeft="true" android:layout_marginTop="25dp"></TextView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Play" android:id="@+id/menu_video_play"></item>
+<item android:title="Details" android:id="@+id/menu_video_details"></item>
+<item android:title="Delete" android:id="@+id/menu_video_delete" android:visible="false"></item>
+<item android:visible="false" android:id="@+id/menu_video_edit" android:title="Edit"></item>
+</menu>

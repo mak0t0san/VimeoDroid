@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="system">
+        <item>settings</item>
+        <item>messages</item>
+        <item>log_out</item>
+        <item>upload</item>
+        <item>videoschool</item>
+        <item>categories</item>
+        <item>groups</item>
+        <item>channels</item>
+        <item>hd</item>
+        <item>staffpicks</item>
+        <item>forum</item>
+        <item>help</item>
+        <item>help/basics</item>
+        <item>guidelines</item>
+        <item>forums</item>
+        <item>api</item>
+        <item>about</item>
+        <item>blog</item>
+        <item>jobs</item>
+        <item>guidelines</item>
+    </string-array>
+</resources>

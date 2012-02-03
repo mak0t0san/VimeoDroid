@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="textForeground">#000000</color>
+<color name="commentReplyBackground">#666666</color>
+<color name="linkColor">#2786C2</color>
+<color name="tilebgVideos">#4EBAFF</color>
+<color name="tilebgLikes">#F6402D</color>
+<color name="tilebgContacts">#969696</color>
+<color name="tilebgGroups">#AAD450</color>
+<color name="tilebgChannels">#FF8A3C</color>
+<color name="tilebgAlbums">#FBCA54</color>
+<color name="whiteText">#FFFFFF</color>
+</resources>
