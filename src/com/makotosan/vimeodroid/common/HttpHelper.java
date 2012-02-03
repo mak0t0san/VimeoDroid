@@ -1,3 +1,19 @@
+/**
+ * VimeoDroid - Unofficial Vimeo app for Android
+ * Copyright (C) 2012 Makoto Schoppert
+ * This program is free software; 
+ * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; 
+ * either version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with this program; 
+ * if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ */
+
 package com.makotosan.vimeodroid.common;
 
 import java.io.IOException;
@@ -57,7 +73,8 @@ public class HttpHelper {
         final DefaultHttpClient client = new DefaultHttpClient(params);
 
         client.addRequestInterceptor(new HttpRequestInterceptor() {
-            public void process(HttpRequest request, HttpContext context) {
+            @Override
+			public void process(HttpRequest request, HttpContext context) {
                 // Add header to accept gzip content
                 if (!request.containsHeader(HEADER_ACCEPT_ENCODING)) {
                     request.addHeader(HEADER_ACCEPT_ENCODING, ENCODING_GZIP);
@@ -66,7 +83,8 @@ public class HttpHelper {
         });
 
         client.addResponseInterceptor(new HttpResponseInterceptor() {
-            public void process(HttpResponse response, HttpContext context) {
+            @Override
+			public void process(HttpResponse response, HttpContext context) {
                 // Inflate any responses compressed with gzip
                 final HttpEntity entity = response.getEntity();
                 final Header encoding = entity.getContentEncoding();

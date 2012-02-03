@@ -23,16 +23,15 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Build;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
@@ -42,7 +41,6 @@ import android.widget.TextView;
 import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
-import java.util.TimeZone;
 
 /**
  * An assortment of UI helpers.
@@ -101,7 +99,7 @@ public class UIUtils {
 
             // Insert bold style
             builder.setSpan(sBoldSpan, startIndex - delta, endIndex - delta - 1,
-                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
             delta += 2;
         }

@@ -1,3 +1,19 @@
+/**
+ * VimeoDroid - Unofficial Vimeo app for Android
+ * Copyright (C) 2012 Makoto Schoppert
+ * This program is free software; 
+ * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; 
+ * either version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with this program; 
+ * if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ */
+
 package com.makotosan.vimeodroid;
 
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
@@ -60,7 +76,7 @@ public class Authentication {
 			info.setConsumerToken(consumer.getToken());
 			info.setConsumerTokenSecret(consumer.getTokenSecret());
 
-			final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Activity.MODE_PRIVATE);
+			final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Context.MODE_PRIVATE);
 			final SharedPreferences.Editor editor = myPrefs.edit();
 
 			editor.putString(Authentication.CONSUMER_TOKEN_PREF, info.getConsumerToken());
@@ -77,7 +93,7 @@ public class Authentication {
 
 	public static boolean isUserLoggedIn(Context context, Application app) {
 		// Check if we have saved credentials
-		final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Activity.MODE_PRIVATE);
+		final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Context.MODE_PRIVATE);
 		final String authToken = myPrefs.getString(Authentication.CONSUMER_TOKEN_PREF, null);
 
 		// If not, return false
@@ -93,7 +109,7 @@ public class Authentication {
 	}
 
 	public static void logout(Context context) {
-		final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Activity.MODE_PRIVATE);
+		final SharedPreferences myPrefs = context.getSharedPreferences(Authentication.MY_PREFS, Context.MODE_PRIVATE);
 		final SharedPreferences.Editor editor = myPrefs.edit();
 
 		editor.remove(Authentication.CONSUMER_TOKEN_PREF);

@@ -338,6 +338,7 @@ public class ImageDownloader {
 	private final Handler purgeHandler = new Handler();
 
 	private final Runnable purger = new Runnable() {
+		@Override
 		public void run() {
 			clearCache();
 		}
